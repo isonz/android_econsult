@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">e问</string>
+    <string name="title_home">首页</string>
+    <string name="title_inquiry">问诊</string>
+    <string name="title_message">消息</string>
+    <string name="title_discovery">发现</string>
+    <string name="title_my">我的</string>
+
+
+    <string name="login_logo">Login Logo</string>
+    <string name="login_slogan1">您的在线家庭医生</string>
+    <string name="login_slogan2">医生的助手 • 病患的朋友</string>
+</resources>
