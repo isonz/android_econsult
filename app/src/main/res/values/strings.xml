@@ -10,4 +10,12 @@
     <string name="login_logo">Login Logo</string>
     <string name="login_slogan1">您的在线家庭医生</string>
     <string name="login_slogan2">医生的助手 • 病患的朋友</string>
+    <string name="login_weixin">点击使用微信登入</string>
+
+    <string name="login_by_username">使用账号密码登入</string>
+    <string name="login_by_username_username_hit">账号/Username</string>
+    <string name="login_by_username_password_hit">密码/Password</string>
+    <string name="login_by_username_submit">登入/LOGIN</string>
+    <string name="login_by_username_register">新用户注册 >>> </string>
+
 </resources>
