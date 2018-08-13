@@ -18,4 +18,13 @@
     <string name="login_by_username_submit">登入/LOGIN</string>
     <string name="login_by_username_register">新用户注册 >>> </string>
 
+
+    <string name="menu_share">分享</string>
+    <string name="menu_help">帮助</string>
+    <string name="menu_search">搜索</string>
+
+    <string name="index_inquiry">实时问诊</string>
+    <string name="index_visit">复诊</string>
+    <string name="index_my_doctor">我的家庭医生</string>
+
 </resources>

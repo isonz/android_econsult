@@ -6,12 +6,12 @@
 
     <!-- fill with two colors, and the two colors change softly -->
     <!--
-         <gradient
+    <gradient
         android:angle="270"
         android:startColor="@color/orange_light"
         android:endColor="@color/orange_normal"
         android:useLevel="true" />
     -->
-    <solid android:color="@color/colorPrimaryDark" />
+    <solid android:color="@color/colorLogin" />
 
 </shape>
