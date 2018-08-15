@@ -23,8 +23,35 @@
     <string name="menu_help">帮助</string>
     <string name="menu_search">搜索</string>
 
-    <string name="index_inquiry">实时问诊</string>
-    <string name="index_visit">复诊</string>
-    <string name="index_my_doctor">我的家庭医生</string>
+    <string name="inquiry_now">实时问诊</string>
+    <string name="inquiry_visit">复诊</string>
+    <string name="inquiry_my_doctor">我的家庭医生</string>
+
+    <string name="inquiry_now_description">描述您的问题</string>
+    <string name="inquiry_now_description_upload_btn">上传您的报告</string>
+    <string name="inquiry_now_description_submit">进入问诊</string>
+
+    <string name="inquiry_select_online_doctor">选择在线医生</string>
+    <string name="immediately_consult">立即咨询</string>
+    <string name="selected_online_physician">已选择的在线医生</string>
+    <string name="select_consultation_method">请选择咨询方式</string>
+
+    <string name="video_mode">视频模式</string>
+    <string name="voice_mode">语音模式</string>
+    <string name="word_mode">文字模式</string>
+    <string name="send">发送</string>
+    <string name="end_of_consult">问诊结束</string>
+    <string name="view_records">查看病历</string>
+    <string name="received_medical_report_from_doctor">收到医生发来的病历报告</string>
+    <string name="illness_description">病情描述</string>
+    <string name="processing_opinion">处理意见</string>
+    <string name="prescription">药方</string>
+    <string name="buy_dai">一键代买</string>
+    <string name="follow_up_date">随访日期</string>
+    <string name="recommend_specialist">推荐专科医生</string>
+    <string name="appointment_immediately">立即预约</string>
+
+
+
 
 </resources>

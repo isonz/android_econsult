@@ -15,7 +15,7 @@ class LoginByUsernameActivity : AppCompatActivity()
         setContentView(R.layout.activity_login_username)
 
         submit_login.setOnClickListener {
-            startActivity(Intent(LoginByUsernameActivity@ this, MainActivity::class.java))
+            startActivity(Intent(LoginByUsernameActivity@ this, InquiryActivity::class.java))
         }
 
     }

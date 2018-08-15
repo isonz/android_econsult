@@ -16,8 +16,8 @@ class LoginActivity : AppCompatActivity()
     {
         L.i("ON CREATE")
         super.onCreate(savedInstanceState)
-        supportRequestWindowFeature(Window.FEATURE_NO_TITLE)
 
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE)
         //透明系统状态栏
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
@@ -31,7 +31,7 @@ class LoginActivity : AppCompatActivity()
         }
 
         weixin_icon.setOnClickListener{
-            startActivity(Intent(LoginActivity@this, MainActivity::class.java))
+            startActivity(Intent(LoginActivity@this, InquiryActivity::class.java))
         }
     }
 

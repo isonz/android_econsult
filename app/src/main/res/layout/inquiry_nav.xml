@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <include layout="@layout/navigation"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TableRow
+            android:id="@+id/inquiry_now_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp">
+
+            <ImageView
+                android:id="@+id/inquiry_now_img"
+                android:layout_width="78dp"
+                android:layout_height="71dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/inquiry_now"
+                android:gravity="end"
+                android:src="@drawable/inquiry_now"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/inquiry_now_word"
+                android:layout_width="wrap_content"
+                android:layout_height="71dp"
+                android:layout_weight="1"
+                android:text="@string/inquiry_now"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/inquiry_visit_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp">
+
+            <ImageView
+                android:id="@+id/inquiry_visit_img"
+                android:layout_width="78dp"
+                android:layout_height="71dp"
+                android:contentDescription="@string/inquiry_visit"
+                android:src="@drawable/inquiry_visit"
+                android:layout_weight="1"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/inquiry_visit_word"
+                android:layout_width="wrap_content"
+                android:layout_height="71dp"
+                android:text="@string/inquiry_visit"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/inquiry_my_doctor_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp">
+
+            <ImageView
+                android:id="@+id/inquiry_my_doctor_img"
+                android:layout_width="78dp"
+                android:layout_height="71dp"
+                android:contentDescription="@string/inquiry_my_doctor"
+                android:src="@drawable/inquiry_my_doctor"
+                android:layout_weight="1"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/inquiry_my_doctor_word"
+                android:layout_width="wrap_content"
+                android:layout_height="71dp"
+                android:text="@string/inquiry_my_doctor"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

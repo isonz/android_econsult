@@ -1,36 +1,32 @@
 package com.onionm.econsult
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.view.menu.MenuBuilder
 import android.view.Menu
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.navigation.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity()
+{
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_home -> {
-
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_inquiry -> {
-
-                return@OnNavigationItemSelectedListener true
+                startActivity(Intent(MainActivity@this, InquiryActivity::class.java))
             }
             R.id.navigation_message -> {
-
-                return@OnNavigationItemSelectedListener true
+                startActivity(Intent(MainActivity@this, MessageActivity::class.java))
             }
             R.id.navigation_discovery -> {
-
-                return@OnNavigationItemSelectedListener true
+                startActivity(Intent(MainActivity@this, DiscoveryActivity::class.java))
             }
             R.id.navigation_my -> {
-
-                return@OnNavigationItemSelectedListener true
+                startActivity(Intent(MainActivity@this, MyActivity::class.java))
             }
         }
         false
@@ -45,6 +41,8 @@ class MainActivity : AppCompatActivity() {
         // supportActionBar!!.setHomeButtonEnabled(true)
 
         navigation_bottom.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+        navigation_bottom.menu.getItem(0).isChecked = true
+
     }
 
 

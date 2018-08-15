@@ -9,7 +9,8 @@
     <item
         android:id="@+id/navigation_inquiry"
         android:icon="@drawable/svg_inquiry"
-        android:title="@string/title_inquiry" />
+        android:title="@string/title_inquiry"
+        android:checked="true"/>
 
     <item
         android:id="@+id/navigation_message"

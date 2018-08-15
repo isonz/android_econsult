@@ -33,6 +33,93 @@
         </activity>
 
 
+        <!-- INQUIRY -->
+        <activity
+            android:name=".InquiryActivity"
+            android:label="@string/title_inquiry">
+        </activity>
+        <activity
+            android:name=".InquiryEndActivity"
+            android:label="@string/end_of_consult">
+        </activity>
+
+
+        <activity
+            android:name=".InquiryNowActivity"
+            android:parentActivityName=".InquiryActivity"
+            android:label="@string/inquiry_now">
+        </activity>
+        <activity
+            android:name=".InquirySelectOnlineDoctorActivity"
+            android:parentActivityName=".InquiryNowActivity"
+            android:label="@string/inquiry_select_online_doctor">
+        </activity>
+        <activity
+            android:name=".InquirySelectedOnlineDoctorActivity"
+            android:parentActivityName=".InquirySelectOnlineDoctorActivity"
+            android:label="@string/selected_online_physician">
+        </activity>
+        <activity
+            android:name=".InquirySelectedOnlineDoctorVideoActivity"
+            android:parentActivityName=".InquirySelectedOnlineDoctorActivity"
+            android:label="@string/video_mode">
+        </activity>
+        <activity
+            android:name=".InquirySelectedOnlineDoctorVoiceActivity"
+            android:parentActivityName=".InquirySelectedOnlineDoctorActivity"
+            android:label="@string/voice_mode">
+        </activity>
+        <activity
+            android:name=".InquirySelectedOnlineDoctorWordActivity"
+            android:parentActivityName=".InquirySelectedOnlineDoctorActivity"
+            android:label="@string/word_mode">
+        </activity>
+
+
+        <activity
+            android:name=".InquiryVisitActivity"
+            android:parentActivityName=".InquiryActivity"
+            android:label="@string/inquiry_visit">
+        </activity>
+        <activity
+            android:name=".InquiryMyDoctorActivity"
+            android:parentActivityName=".InquiryActivity"
+            android:label="@string/inquiry_my_doctor">
+        </activity>
+        <!-- END INQUIRY -->
+
+
+        <activity
+            android:name=".MedicalRecordsActivity"
+            android:label="@string/view_records">
+        </activity>
+
+
+        <activity
+            android:name=".MessageActivity"
+            android:label="@string/title_message">
+        </activity>
+
+
+
+
+        <activity
+            android:name=".DiscoveryActivity"
+            android:label="@string/title_discovery">
+        </activity>
+
+
+
+
+        <activity
+            android:name=".MyActivity"
+            android:label="@string/title_my">
+        </activity>
+
+
+
+
+
     </application>
 
 </manifest>

@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:id="@+id/inquiry_now_line_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius5"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inquiry_now_description"
+                    android:textColor="@color/gray9" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="0.5dp"
+                    android:background="#999999" />
+
+                <EditText
+                    android:id="@+id/inquiry_now_description_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:minLines="10"
+                    android:maxLines="15"
+                    android:textSize="16sp"
+                    android:scrollbars="vertical"
+                    android:background="@color/white"
+                    android:text="头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/inquiry_now_line_layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/inquiry_now_line_layout">
+
+                <ImageView
+                    android:id="@+id/inquiry_now_file_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="@string/login_logo"
+                    app:srcCompat="@drawable/file_icon"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/inquiry_now_upload_btn"
+                    style="@style/zButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="@string/inquiry_now_description_upload_btn"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginStart="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inquiry_now_line_layout_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/inquiry_now_line_layout_2">
+
+                <Button
+                    android:id="@+id/inquiry_now_description_submit"
+                    style="@style/zButton"
+                    android:text="@string/inquiry_now_description_submit"/>
+
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

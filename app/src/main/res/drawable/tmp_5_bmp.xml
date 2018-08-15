@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tmp_5_bmp"
+    android:src="@drawable/tmp_5"
+    android:tileMode="disabled"
+    android:gravity="top"
+    android:mipMap="true">
+</bitmap>
