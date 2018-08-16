@@ -2,41 +2,30 @@ package com.onionm.econsult
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.view.menu.MenuBuilder
 import android.view.Menu
-import kotlinx.android.synthetic.main.navigation.*
+import kotlinx.android.synthetic.main.inquiry_visit.*
 
 class InquiryVisitActivity : AppCompatActivity()
 {
-    private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
-        when (item.itemId) {
-            R.id.navigation_home -> {
-                startActivity(Intent(InquiryActivity@this, MainActivity::class.java))
-            }
-            R.id.navigation_inquiry -> {
-                return@OnNavigationItemSelectedListener true
-            }
-            R.id.navigation_message -> {
-                startActivity(Intent(InquiryActivity@this, MessageActivity::class.java))
-            }
-            R.id.navigation_discovery -> {
-                startActivity(Intent(InquiryActivity@this, DiscoveryActivity::class.java))
-            }
-            R.id.navigation_my -> {
-                startActivity(Intent(InquiryActivity@this, MyActivity::class.java))
-            }
-        }
-        false
-    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.inquiry_nav)
+        setContentView(R.layout.inquiry_visit)
 
-        navigation_bottom.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
-        navigation_bottom.menu.getItem(1).isChecked = true
+        inquiry_type_video.setOnClickListener {
+            startActivity(Intent(InquiryVisitActivity@this, InquirySelectedOnlineDoctorVideoActivity::class.java))
+        }
+
+        inquiry_type_voice.setOnClickListener {
+            startActivity(Intent(InquiryVisitActivity@this, InquirySelectedOnlineDoctorVoiceActivity::class.java))
+        }
+
+        inquiry_type_word.setOnClickListener {
+            startActivity(Intent(InquiryVisitActivity@this, InquirySelectedOnlineDoctorWordActivity::class.java))
+        }
     }
 
 

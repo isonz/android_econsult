@@ -50,6 +50,22 @@
     <string name="follow_up_date">随访日期</string>
     <string name="recommend_specialist">推荐专科医生</string>
     <string name="appointment_immediately">立即预约</string>
+    <string name="select_your_solution">请选择您的解决方案</string>
+    <string name="deal_with">自行处理</string>
+    <string name="make_an_appointment_detection">预约检测</string>
+    <string name="quick_buy_medicine">快速买药</string>
+    <string name="consult_a_specialist">咨询专科医生</string>
+    <string name="medicine_recode_list">病历列表</string>
+    <string name="select_a_case_for_consultation">请选择一个病历咨询</string>
+    <string name="online_consult">在线咨询</string>
+    <string name="online_to_consult">医生在线\n请选择一种方式进行在线咨询</string>
+    <string name="offline_consult">医生离线\n请留言，医生会尽快联系您</string>
+    <string name="solve_by_self_alert">您已成功选择了 \"自行处理\" 的方式</string>
+    <string name="return_to_index">返回</string>
+    <string name="ok_pay">确认并支付</string>
+    <string name="drug_name">药品名称</string>
+    <string name="number">数量</string>
+    <string name="price">价格</string>
 
 
 

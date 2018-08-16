@@ -78,9 +78,16 @@
 
         <activity
             android:name=".InquiryVisitActivity"
-            android:parentActivityName=".InquiryActivity"
+            android:parentActivityName=".MedicalRecordListActivity"
             android:label="@string/inquiry_visit">
         </activity>
+        <activity
+            android:name=".InquiryVisit2Activity"
+            android:parentActivityName=".MedicalRecordListActivity"
+            android:label="@string/inquiry_visit">
+        </activity>
+
+
         <activity
             android:name=".InquiryMyDoctorActivity"
             android:parentActivityName=".InquiryActivity"
@@ -88,7 +95,26 @@
         </activity>
         <!-- END INQUIRY -->
 
+        <activity
+            android:name=".SolveBySelfActivity"
+            android:label="@string/deal_with">
+        </activity>
+        <activity
+            android:name=".PrescriptionActivity"
+            android:parentActivityName=".MedicalRecordsActivity"
+            android:label="@string/prescription">
+        </activity>
+        <activity
+            android:name=".AppointmentDetectionActivity"
+            android:parentActivityName=".MedicalRecordsActivity"
+            android:label="@string/make_an_appointment_detection">
+        </activity>
 
+
+        <activity
+            android:name=".MedicalRecordListActivity"
+            android:label="@string/medicine_recode_list">
+        </activity>
         <activity
             android:name=".MedicalRecordsActivity"
             android:label="@string/view_records">

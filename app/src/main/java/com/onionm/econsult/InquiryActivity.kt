@@ -9,7 +9,7 @@ import android.view.Menu
 import kotlinx.android.synthetic.main.inquiry_nav.*
 import kotlinx.android.synthetic.main.navigation.*
 
-class InquiryActivity : AppCompatActivity()
+open class InquiryActivity : AppCompatActivity()
 {
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
@@ -43,7 +43,7 @@ class InquiryActivity : AppCompatActivity()
             startActivity(Intent(InquiryActivity@this, InquiryNowActivity::class.java))
         }
         inquiry_visit_row.setOnClickListener{
-            startActivity(Intent(InquiryActivity@this, InquiryVisitActivity::class.java))
+            startActivity(Intent(InquiryActivity@this, MedicalRecordListActivity::class.java))
         }
         inquiry_my_doctor_row.setOnClickListener{
             startActivity(Intent(InquiryActivity@this, InquiryMyDoctorActivity::class.java))
