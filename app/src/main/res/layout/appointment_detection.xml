@@ -23,78 +23,188 @@
             android:paddingEnd="10dp"
             android:orientation="vertical">
 
-
             <LinearLayout
-                android:id="@+id/inquiry_selected_doctor_layout_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:gravity="top"
+                android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="20dp"
-                android:background="@drawable/radius5"
-                android:minHeight="150dp"
                 android:layout_marginBottom="20dp">
 
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/tmp_1"
-                    android:contentDescription="@string/inquiry_select_online_doctor" />
-
-                <TextView
-                    android:id="@+id/textView4"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingStart="10dp"
-                    android:layout_weight="3"
-                    android:text="陈医生（呼吸科）\n上海仁济医院（三甲，特色：综合）\n东院地址：上海市浦建路160号 \n收费：20元/诊断"
-                    android:textColor="#666666" />
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@drawable/radius5_orange"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginEnd="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="搜索附近的检测中心"
+                        android:paddingRight="10dp"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/svg_search"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/svg_gps"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="定位:广州市天河区"
+                    android:paddingRight="10dp"/>
 
             </LinearLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#eeeeee"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                tools:ignore="Suspicious0dp" />
-
-
-            <TextView
+            <LinearLayout
+                android:id="@+id/detection_id_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:text="@string/offline_consult"
-                android:textAlignment="center"
-                android:textSize="16sp" />
-
-
-            <EditText
-                android:id="@+id/inquiry_now_description_content"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:gravity="top"
-                android:minLines="10"
-                android:maxLines="15"
-                android:textSize="16sp"
-                android:scrollbars="vertical"
-                android:background="@drawable/radius5"
-                android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:padding="10dp"
-                android:text="头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。" />
+                android:background="@drawable/radius5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="1、XXXX检测中心\n地址：上海市浦建路160号\n电话：13623645678"
+                    android:textColor="#666666" />
 
-            <Button
-                android:id="@+id/inquiry_visit_submit"
-                style="@style/zButton"
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/tmp_6"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/detection_id_2"
                 android:layout_width="match_parent"
-                android:text="@string/send" />
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="2、XXXX检测中心\n地址：上海市浦建路160号\n电话：13623645678"
+                    android:textColor="#666666" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/tmp_6"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/detection_id_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="3、XXXX检测中心\n地址：上海市浦建路160号\n电话：13623645678"
+                    android:textColor="#666666" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/tmp_6"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/detection_id_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="4、XXXX检测中心\n地址：上海市浦建路160号\n电话：13623645678"
+                    android:textColor="#666666" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/tmp_6"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/detection_id_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="5、XXXX检测中心\n地址：上海市浦建路160号\n电话：13623645678"
+                    android:textColor="#666666" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/tmp_6"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/detection_id_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="6、XXXX检测中心\n地址：上海市浦建路160号\n电话：13623645678"
+                    android:textColor="#666666" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/tmp_6"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 

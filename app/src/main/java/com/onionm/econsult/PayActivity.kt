@@ -1,21 +1,16 @@
 package com.onionm.econsult
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.view.menu.MenuBuilder
 import android.view.Menu
-import kotlinx.android.synthetic.main.prescription.*
 
-class PrescriptionActivity : AppCompatActivity()
+class PayActivity : AppCompatActivity()
 {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.prescription)
+        setContentView(R.layout.pay)
 
-        prescription_pay_submit.setOnClickListener{
-            startActivity(Intent(PrescriptionActivity@this, PayActivity::class.java))
-        }
 
     }
 

@@ -109,7 +109,22 @@
             android:parentActivityName=".MedicalRecordsActivity"
             android:label="@string/make_an_appointment_detection">
         </activity>
+        <activity
+            android:name=".DetectionActivity"
+            android:parentActivityName=".AppointmentDetectionActivity"
+            android:label="奥莲医疗检测中心">
+        </activity>
+        <activity
+            android:name=".DetectionInfoActivity"
+            android:parentActivityName=".DetectionActivity"
+            android:label="预约详情">
+        </activity>
 
+
+        <activity
+            android:name=".PayActivity"
+            android:label="@string/payment_method">
+        </activity>
 
         <activity
             android:name=".MedicalRecordListActivity"

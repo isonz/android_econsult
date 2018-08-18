@@ -6,6 +6,7 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.view.menu.MenuBuilder
 import android.view.Menu
+import android.view.View
 import kotlinx.android.synthetic.main.inquiry_nav.*
 import kotlinx.android.synthetic.main.navigation.*
 
@@ -13,20 +14,40 @@ open class InquiryActivity : AppCompatActivity()
 {
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
-            R.id.navigation_home -> {
-                startActivity(Intent(InquiryActivity@this, MainActivity::class.java))
-            }
+//            R.id.navigation_home -> {
+//                startActivity(Intent(InquiryActivity@this, MainActivity::class.java))
+//            }
             R.id.navigation_inquiry -> {
+                inquiry_nav.visibility = View.VISIBLE
+                message_nav.visibility = View.GONE
+                discovery_nav.visibility = View.GONE
+                my_nav.visibility = View.GONE
+
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_message -> {
-                startActivity(Intent(InquiryActivity@this, MessageActivity::class.java))
+                inquiry_nav.visibility = View.GONE
+                message_nav.visibility = View.VISIBLE
+                discovery_nav.visibility = View.GONE
+                my_nav.visibility = View.GONE
+
+                return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_discovery -> {
-                startActivity(Intent(InquiryActivity@this, DiscoveryActivity::class.java))
+                inquiry_nav.visibility = View.GONE
+                message_nav.visibility = View.GONE
+                discovery_nav.visibility = View.VISIBLE
+                my_nav.visibility = View.GONE
+
+                return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_my -> {
-                startActivity(Intent(InquiryActivity@this, MyActivity::class.java))
+                inquiry_nav.visibility = View.GONE
+                message_nav.visibility = View.GONE
+                discovery_nav.visibility = View.GONE
+                my_nav.visibility = View.VISIBLE
+
+                return@OnNavigationItemSelectedListener true
             }
         }
         false
@@ -37,7 +58,7 @@ open class InquiryActivity : AppCompatActivity()
         setContentView(R.layout.inquiry_nav)
 
         navigation_bottom.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
-        navigation_bottom.menu.getItem(1).isChecked = true
+        // navigation_bottom.menu.getItem(0).isChecked = true
 
         inquiry_now_row.setOnClickListener{
             startActivity(Intent(InquiryActivity@this, InquiryNowActivity::class.java))

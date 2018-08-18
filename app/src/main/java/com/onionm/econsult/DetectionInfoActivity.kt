@@ -2,29 +2,20 @@ package com.onionm.econsult
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.view.menu.MenuBuilder
 import android.view.Menu
-import kotlinx.android.synthetic.main.inquiry_select_doctor.*
-import kotlinx.android.synthetic.main.navigation.*
+import kotlinx.android.synthetic.main.detection_info.*
 
-class InquiryMyDoctorActivity : AppCompatActivity()
+class DetectionInfoActivity : AppCompatActivity()
 {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.inquiry_my_doctor)
+        setContentView(R.layout.detection_info)
 
-        inquiry_select_online_doctor_btn_1.setOnClickListener{
-            startActivity(Intent(InquirySelectOnlineDoctorActivity@this, InquirySelectedOnlineDoctorActivity::class.java))
+        prescription_info_pay_submit.setOnClickListener {
+            startActivity(Intent(DetectionInfoActivity@this, PayActivity::class.java))
         }
-        inquiry_select_online_doctor_btn_3.setOnClickListener{
-            startActivity(Intent(InquirySelectOnlineDoctorActivity@this, InquirySelectedOnlineDoctorActivity::class.java))
-        }
-        inquiry_select_online_doctor_btn_4.setOnClickListener{
-            startActivity(Intent(InquirySelectOnlineDoctorActivity@this, InquirySelectedOnlineDoctorActivity::class.java))
-        }
-
     }
 
 

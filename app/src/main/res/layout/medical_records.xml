@@ -167,7 +167,7 @@
                         android:textSize="14sp" />
 
                     <Button
-                        android:id="@+id/inquiry_now_upload_btn"
+                        android:id="@+id/one_key_btn"
                         style="@style/zButton1"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"

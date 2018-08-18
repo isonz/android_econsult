@@ -61,11 +61,17 @@
     <string name="online_to_consult">医生在线\n请选择一种方式进行在线咨询</string>
     <string name="offline_consult">医生离线\n请留言，医生会尽快联系您</string>
     <string name="solve_by_self_alert">您已成功选择了 \"自行处理\" 的方式</string>
-    <string name="return_to_index">返回</string>
+    <string name="return_to_index">返回主页</string>
     <string name="ok_pay">确认并支付</string>
     <string name="drug_name">药品名称</string>
     <string name="number">数量</string>
     <string name="price">价格</string>
+    <string name="go_to">前往</string>
+    <string name="confirm_appointment">确认预约</string>
+    <string name="payment_method">支付方式</string>
+    <string name="union_pay">银联支付</string>
+    <string name="wechat_pay">微信支付</string>
+    <string name="ali_pay">支付宝支付</string>
 
 
 

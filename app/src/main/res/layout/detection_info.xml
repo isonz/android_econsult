@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="20dp"
+                android:background="@drawable/radius5"
+                android:minHeight="150dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="2dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/inquiry_select_online_doctor"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/tmp_2" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:layout_weight="3"
+                        android:text="姓名：张三"
+                        android:textColor="#666666" />
+
+                </LinearLayout>
+                <include layout="@layout/line"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="个人信息："
+                    android:textColor="@color/gray3"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="姓名：张三\n年龄：30"
+                    android:textColor="@color/gray3"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="检测项目："
+                    android:textColor="@color/gray3"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="套餐一"
+                    android:textColor="@color/gray3"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="检测时间："
+                    android:textColor="@color/gray3"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2018年9月30日 09:15"
+                    android:textColor="@color/gray3"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="检测费用：￥500.00"
+                    android:textColor="@color/gray3"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/prescription_info_pay_submit"
+                style="@style/zButton"
+                android:layout_height="35dp"
+                android:layout_width="match_parent"
+                android:text="@string/ok_pay"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -41,11 +41,21 @@ class MedicalRecordsActivity : AppCompatActivity()
 
 
         consult_a_specialist.setOnClickListener {
-            startActivity(Intent(MedicalRecordsActivity@this, InquiryMyDoctorActivity::class.java))
+            startActivity(Intent(MedicalRecordsActivity@this, InquirySelectOnlineDoctorActivity::class.java))
         }
 
         consult_a_specialist_word.setOnClickListener {
-            startActivity(Intent(MedicalRecordsActivity@this, InquiryMyDoctorActivity::class.java))
+            startActivity(Intent(MedicalRecordsActivity@this, InquirySelectOnlineDoctorActivity::class.java))
+        }
+
+
+        one_key_btn.setOnClickListener {
+            startActivity(Intent(MedicalRecordsActivity@this, PrescriptionActivity::class.java))
+        }
+
+
+        immediately_consult.setOnClickListener {
+            startActivity(Intent(MedicalRecordsActivity@this, InquiryVisitActivity::class.java))
         }
 
     }

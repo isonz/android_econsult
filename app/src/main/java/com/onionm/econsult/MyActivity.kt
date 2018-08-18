@@ -6,25 +6,31 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.view.menu.MenuBuilder
 import android.view.Menu
+import android.view.View
+import kotlinx.android.synthetic.main.inquiry_nav.*
 import kotlinx.android.synthetic.main.navigation.*
 
 class MyActivity : AppCompatActivity()
 {
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
-            R.id.navigation_home -> {
-                startActivity(Intent(MyActivity@this, MainActivity::class.java))
-            }
+//            R.id.navigation_home -> {
+//                startActivity(Intent(MyActivity@this, MainActivity::class.java))
+//            }
             R.id.navigation_inquiry -> {
-                startActivity(Intent(MyActivity@this, InquiryActivity::class.java))
+                inquiry_nav.visibility = View.GONE
+                return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_message -> {
-                startActivity(Intent(MyActivity@this, MessageActivity::class.java))
+                message_nav.visibility = View.GONE
+                return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_discovery -> {
-                startActivity(Intent(MyActivity@this, DiscoveryActivity::class.java))
+                discovery_nav.visibility = View.GONE
+                return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_my -> {
+                my_nav.visibility = View.VISIBLE
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -36,7 +42,7 @@ class MyActivity : AppCompatActivity()
         setContentView(R.layout.my_nav)
 
         navigation_bottom.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
-        navigation_bottom.menu.getItem(4).isChecked = true
+        navigation_bottom.menu.getItem(3).isChecked = true
 
     }
 

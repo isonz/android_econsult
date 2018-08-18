@@ -6,26 +6,34 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.view.menu.MenuBuilder
 import android.view.Menu
+import android.view.View
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.inquiry_nav.*
 import kotlinx.android.synthetic.main.navigation.*
 
 class MessageActivity : AppCompatActivity()
 {
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
-            R.id.navigation_home -> {
-                startActivity(Intent(MessageActivity@this, MainActivity::class.java))
-            }
+//            R.id.navigation_home -> {
+//                startActivity(Intent(MessageActivity@this, MainActivity::class.java))
+//            }
+
             R.id.navigation_inquiry -> {
-                startActivity(Intent(MessageActivity@this, InquiryActivity::class.java))
+                inquiry_nav.visibility = View.GONE
+                return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_message -> {
+                message_nav.visibility = View.VISIBLE
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_discovery -> {
-                startActivity(Intent(MessageActivity@this, DiscoveryActivity::class.java))
+                discovery_nav.visibility = View.GONE
+                return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_my -> {
-                startActivity(Intent(MessageActivity@this, MyActivity::class.java))
+                my_nav.visibility = View.GONE
+                return@OnNavigationItemSelectedListener true
             }
         }
         false
@@ -36,7 +44,7 @@ class MessageActivity : AppCompatActivity()
         setContentView(R.layout.message_nav)
 
         navigation_bottom.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
-        navigation_bottom.menu.getItem(2).isChecked = true
+        // navigation_bottom.menu.getItem(1).isChecked = true
 
     }
 

@@ -164,10 +164,145 @@
                             android:layout_weight="5"
                             android:background="@color/white"
                             android:gravity="center_vertical"
-                            android:text="@string/drug_name"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="拨尼松龙"
+                            android:textAlignment="center"
+                            android:textColor="@color/gray3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textColor="@color/gray3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="￥169.00"
+                            android:textAlignment="center"
+                            android:textColor="@color/gray3" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="*">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:layout_weight="5"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="氯雷他定"
+                            android:textAlignment="center"
+                            android:textColor="@color/gray3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="3"
+                            android:textAlignment="center"
+                            android:textColor="@color/gray3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="￥29.00"
+                            android:textAlignment="center"
+                            android:textColor="@color/gray3" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="*">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:layout_weight="5"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="对乙酰氨基酚"
+                            android:textAlignment="center"
+                            android:textColor="@color/gray3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="5"
+                            android:textAlignment="center"
+                            android:textColor="@color/gray3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="￥69.51"
+                            android:textAlignment="center"
+                            android:textColor="@color/gray3" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="*">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:layout_weight="5"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:text="布洛芬"
                             android:textAlignment="center"
                             android:textColor="@color/gray3"
-                            android:textStyle="bold"
                             android:paddingBottom="5dp"
                             android:paddingTop="5dp"/>
 
@@ -178,12 +313,11 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:gravity="center_vertical"
-                            android:text="@string/number"
-                            android:textAlignment="center"
-                            android:textColor="@color/gray3"
-                            android:textStyle="bold"
                             android:paddingBottom="5dp"
-                            android:paddingTop="5dp" />
+                            android:paddingTop="5dp"
+                            android:text="6"
+                            android:textAlignment="center"
+                            android:textColor="@color/gray3" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -192,18 +326,36 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:gravity="center_vertical"
-                            android:text="@string/price"
-                            android:textAlignment="center"
-                            android:textColor="@color/gray3"
-                            android:textStyle="bold"
                             android:paddingBottom="5dp"
-                            android:paddingTop="5dp" />
-
+                            android:paddingTop="5dp"
+                            android:text="￥239.51"
+                            android:textAlignment="center"
+                            android:textColor="@color/gray3" />
                     </TableRow>
 
-
-
                 </TableLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:text="药费：￥407.02"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/gray3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="配送费：￥5.00"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/gray3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="合计：￥412.02"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/gray3"/>
 
             </LinearLayout>
 
