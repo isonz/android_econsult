@@ -36,7 +36,7 @@
         <!-- INQUIRY -->
         <activity
             android:name=".InquiryActivity"
-            android:label="@string/title_inquiry">
+            android:label="@string/app_name">
         </activity>
         <activity
             android:name=".InquiryEndActivity"
@@ -46,8 +46,8 @@
 
         <activity
             android:name=".InquiryNowActivity"
-            android:parentActivityName=".InquiryActivity"
-            android:label="@string/inquiry_now">
+            android:parentActivityName=".InquiryHumanBodyInfoActivity"
+            android:label="病患部位具体描述">
         </activity>
         <activity
             android:name=".InquirySelectOnlineDoctorActivity"
@@ -93,6 +93,19 @@
             android:parentActivityName=".InquiryActivity"
             android:label="@string/inquiry_my_doctor">
         </activity>
+
+        <activity
+            android:name=".InquiryHumanBodyActivity"
+            android:parentActivityName=".InquiryActivity"
+            android:label="选择病患部位">
+        </activity>
+
+        <activity
+            android:name=".InquiryHumanBodyInfoActivity"
+            android:parentActivityName=".InquiryHumanBodyActivity"
+            android:label="选择具体的病患部位">
+        </activity>
+
         <!-- END INQUIRY -->
 
         <activity

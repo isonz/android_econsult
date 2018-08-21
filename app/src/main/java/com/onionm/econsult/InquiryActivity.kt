@@ -61,7 +61,7 @@ open class InquiryActivity : AppCompatActivity()
         // navigation_bottom.menu.getItem(0).isChecked = true
 
         inquiry_now_row.setOnClickListener{
-            startActivity(Intent(InquiryActivity@this, InquiryNowActivity::class.java))
+            startActivity(Intent(InquiryActivity@this, InquiryHumanBodyActivity::class.java))
         }
         inquiry_visit_row.setOnClickListener{
             startActivity(Intent(InquiryActivity@this, MedicalRecordListActivity::class.java))

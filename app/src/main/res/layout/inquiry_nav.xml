@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:background="@drawable/bg">
 
     <include layout="@layout/navigation" />
@@ -117,49 +116,788 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <android.support.v4.widget.NestedScrollView
         android:id="@+id/message_nav"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        android:background="#f6f6f6"
+        android:fillViewport="true"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
         android:visibility="gone">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textAlignment="center"
-            android:text="MESSAGE"/>
+            android:orientation="vertical">
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
 
-    <LinearLayout
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radius5_orange"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/title_message"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <include layout="@layout/line" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/svg_go" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/inquiry_select_online_doctor"
+                        android:src="@drawable/tmp_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="陈医生\n您的预约时间为：12月12日14点15分"
+                        android:textColor="@color/gray3" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/radius5_orange"
+                    android:text="1"
+                    android:textAlignment="center" />
+            </FrameLayout>
+
+            <include layout="@layout/line" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/svg_go" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/inquiry_select_online_doctor"
+                        android:src="@drawable/tmp_3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="陈医生\n您的预约时间为：12月12日14点15分"
+                        android:textColor="@color/gray3" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <include layout="@layout/line" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/svg_go" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/inquiry_select_online_doctor"
+                        android:src="@drawable/tmp_4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="陈医生\n您的预约时间为：12月12日14点15分"
+                        android:textColor="@color/gray3" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <include layout="@layout/line" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/svg_go" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/inquiry_select_online_doctor"
+                        android:src="@drawable/tmp_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="陈医生\n您的预约时间为：12月12日14点15分"
+                        android:textColor="@color/gray3" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <include layout="@layout/line" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/svg_go" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/inquiry_select_online_doctor"
+                        android:src="@drawable/tmp_3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="陈医生\n您的预约时间为：12月12日14点15分"
+                        android:textColor="@color/gray3" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <include layout="@layout/line" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/svg_go" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/inquiry_select_online_doctor"
+                        android:src="@drawable/tmp_4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="陈医生\n您的预约时间为：12月12日14点15分"
+                        android:textColor="@color/gray3" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <include layout="@layout/line" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/svg_go" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/inquiry_select_online_doctor"
+                        android:src="@drawable/tmp_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="陈医生\n您的预约时间为：12月12日14点15分"
+                        android:textColor="@color/gray3" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <include layout="@layout/line" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/svg_go" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/inquiry_select_online_doctor"
+                        android:src="@drawable/tmp_3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="陈医生\n您的预约时间为：12月12日14点15分"
+                        android:textColor="@color/gray3" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <include layout="@layout/line" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/svg_go" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/inquiry_select_online_doctor"
+                        android:src="@drawable/tmp_4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="陈医生\n您的预约时间为：12月12日14点15分"
+                        android:textColor="@color/gray3" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <include layout="@layout/line" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/svg_go" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/inquiry_select_online_doctor"
+                        android:src="@drawable/tmp_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="陈医生\n您的预约时间为：12月12日14点15分"
+                        android:textColor="@color/gray3" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <include layout="@layout/line" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/svg_go" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/inquiry_select_online_doctor"
+                        android:src="@drawable/tmp_3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="陈医生\n您的预约时间为：12月12日14点15分"
+                        android:textColor="@color/gray3" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <include layout="@layout/line" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/svg_go" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/inquiry_select_online_doctor"
+                        android:src="@drawable/tmp_4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="陈医生\n您的预约时间为：12月12日14点15分"
+                        android:textColor="@color/gray3" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <include layout="@layout/line" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v4.widget.NestedScrollView
         android:id="@+id/discovery_nav"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bg"
+        android:fillViewport="true"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
         android:visibility="gone">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textAlignment="center"
-            android:text="DISCOVERY"/>
+            android:orientation="vertical"
+            android:padding="15dp">
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radius5_orange"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/title_discovery"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <include layout="@layout/line" />
 
-    <LinearLayout
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius5_orange"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:minHeight="100dp">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/discovery_hot" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hot_recommended"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:minHeight="100dp"
+                    android:background="@drawable/radius5_orange">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/discovery_news"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hot_information"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius5_orange"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:minHeight="100dp">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/discovery_edu" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/health_education"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:minHeight="100dp"
+                    android:background="@drawable/radius5_orange">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/discovery_baike"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/encyclopedia_of_medicines"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius5_orange"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:minHeight="100dp">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/discovery_life" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/the_hospital_life"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:minHeight="100dp"
+                    android:background="@drawable/radius5_orange">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/discovery_doctor"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/doctor_dynamic"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v4.widget.NestedScrollView
         android:id="@+id/my_nav"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        android:background="#f6f6f6"
+        android:fillViewport="true"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
         android:visibility="gone">
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textAlignment="center"
-            android:text="MESSAGE"/>
+            android:orientation="vertical">
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radius5_orange"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/my_center"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <include layout="@layout/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/inquiry_select_online_doctor"
+                    android:src="@drawable/tmp_2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="姓名：张三\n姓名：男"
+                    android:textColor="@color/gray3" />
+            </LinearLayout>
+            <include layout="@layout/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机：136 1234 5678"
+                android:textColor="@color/gray3"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"/>
+            <include layout="@layout/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="住址：广东省广州市天河区珠江新城高德置地广场1298"
+                android:textColor="@color/gray3"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"/>
+            <include layout="@layout/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="签约医生数量：6"
+                android:textColor="@color/gray3"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"/>
+            <include layout="@layout/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会员级别：VIP6"
+                android:textColor="@color/gray3"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"/>
+            <include layout="@layout/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人简介：XXXXXXX"
+                android:textColor="@color/gray3"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"/>
+            <include layout="@layout/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分：2652"
+                android:textColor="@color/gray3"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"/>
+            <include layout="@layout/line" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 
 </android.support.constraint.ConstraintLayout>

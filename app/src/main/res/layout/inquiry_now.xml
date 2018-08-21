@@ -14,11 +14,24 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
+
         <android.support.constraint.ConstraintLayout
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="您选择了：头部->耳朵"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
                 android:id="@+id/inquiry_now_line_layout"
@@ -34,7 +47,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toBottomOf="@+id/textView7">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -44,23 +57,23 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
                     android:layout_height="0.5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
                     android:background="#999999" />
 
                 <EditText
                     android:id="@+id/inquiry_now_description_content"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/white"
                     android:ems="10"
                     android:gravity="top"
-                    android:minLines="10"
                     android:maxLines="15"
-                    android:textSize="16sp"
+                    android:minLines="10"
                     android:scrollbars="vertical"
-                    android:background="@color/white"
-                    android:text="头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。" />
+                    android:text="头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。"
+                    android:textSize="16sp" />
 
 
             </LinearLayout>

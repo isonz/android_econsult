@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.view.menu.MenuBuilder
 import android.view.Menu
+import com.safframework.log.L
 import kotlinx.android.synthetic.main.inquiry_now.*
 
 class InquiryNowActivity : AppCompatActivity()
@@ -12,6 +13,10 @@ class InquiryNowActivity : AppCompatActivity()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.inquiry_now)
+
+        val partCode = intent.getStringExtra("partCode")
+        val body = intent.getStringExtra("body")
+        L.i(partCode, body)
 
         inquiry_now_description_submit.setOnClickListener{
             startActivity(Intent(InquiryNowActivity@this, InquirySelectOnlineDoctorActivity::class.java))

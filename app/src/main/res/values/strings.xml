@@ -72,6 +72,13 @@
     <string name="union_pay">银联支付</string>
     <string name="wechat_pay">微信支付</string>
     <string name="ali_pay">支付宝支付</string>
+    <string name="my_center">个人中心</string>
+    <string name="hot_recommended">热门推荐</string>
+    <string name="hot_information">热门资讯信息</string>
+    <string name="health_education">健康教育</string>
+    <string name="encyclopedia_of_medicines">药品百科指南</string>
+    <string name="the_hospital_life">医院生活</string>
+    <string name="doctor_dynamic">医生动态</string>
 
 
 
