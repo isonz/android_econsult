@@ -87,7 +87,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:padding="10dp"
-                android:text="头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。头痛，鼻塞，流鼻涕，咳嗦，痰多，出冷汗，便秘，腹胀，浑身无力。" />
+                android:text="" />
 
 
             <Button
