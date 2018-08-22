@@ -14,7 +14,7 @@ class LoginActivity : AppCompatActivity()
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
-        L.i("ON CREATE")
+        L.i("LoginActivity ON CREATE")
         super.onCreate(savedInstanceState)
 
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE)
@@ -36,12 +36,12 @@ class LoginActivity : AppCompatActivity()
     }
 
     override fun onDestroy() {
-        L.i("ON destroy")
+        L.i("LoginActivity ON destroy")
         super.onDestroy()
     }
 
     override fun onStart() {
-        L.i("ON start")
+        L.i("LoginActivity ON start")
         super.onStart()
     }
 

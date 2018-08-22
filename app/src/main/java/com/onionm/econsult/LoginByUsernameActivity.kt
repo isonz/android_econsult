@@ -3,8 +3,6 @@ package com.onionm.econsult
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.view.Window
-import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_login_username.*
 
 class LoginByUsernameActivity : AppCompatActivity()

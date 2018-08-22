@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.view.menu.MenuBuilder
 import android.view.Menu
 import android.view.View
+import com.safframework.log.L
 import kotlinx.android.synthetic.main.inquiry_nav.*
 import kotlinx.android.synthetic.main.navigation.*
 
@@ -90,6 +91,8 @@ open class InquiryActivity : AppCompatActivity()
         inflater.inflate(R.menu.actionbar_menu, menu)
         return super.onCreateOptionsMenu(menu)
     }
+
+
 
 
 }
