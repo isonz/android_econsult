@@ -279,29 +279,35 @@
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="0dp"
         tools:ignore="MissingConstraints"
-        android:padding="15dp"
+        android:padding="5dp"
         android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/svg_voice_"
+            android:layout_marginEnd="5dp"/>
 
         <EditText
             android:id="@+id/inquiry_selected_doctor_word_input"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="30dp"
             android:background="@drawable/edit_text"
             android:ems="10"
             android:layout_weight="5"
             android:inputType="textPersonName"
             tools:ignore="MissingConstraints" />
 
-        <Button
-            android:id="@+id/inquiry_now_upload_btn"
-            style="@style/zButton1"
-            android:layout_width="50dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            android:paddingEnd="10dp"
-            android:paddingStart="10dp"
-            android:text="@string/send" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/svg_emoji_"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"/>
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/add1"/>
 
     </LinearLayout>
 

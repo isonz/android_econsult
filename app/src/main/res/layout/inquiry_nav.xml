@@ -649,26 +649,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:background="@drawable/radius5_orange"
-                    android:layout_margin="5dp"
-                    android:padding="10dp"
-                    android:minHeight="100dp">
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/discovery_hot" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/hot_recommended"
-                        android:textAlignment="center"/>
-                </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -689,6 +670,28 @@
                         android:text="@string/hot_information"
                         android:textAlignment="center"/>
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius5_orange"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:minHeight="100dp">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/discovery_hot" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="医生直播"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -713,56 +716,10 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/health_education"
+                        android:text="医学科普"
                         android:textAlignment="center"/>
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:layout_margin="5dp"
-                    android:padding="10dp"
-                    android:minHeight="100dp"
-                    android:background="@drawable/radius5_orange">
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/discovery_baike"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/encyclopedia_of_medicines"
-                        android:textAlignment="center"/>
-                </LinearLayout>
-            </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:background="@drawable/radius5_orange"
-                    android:layout_margin="5dp"
-                    android:padding="10dp"
-                    android:minHeight="100dp">
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/discovery_life" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/the_hospital_life"
-                        android:textAlignment="center"/>
-                </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -785,6 +742,47 @@
                 </LinearLayout>
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:minHeight="100dp"
+                    android:background="@drawable/radius5_orange">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/discovery_baike"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="药品百科指南"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:minHeight="100dp">
+
+                </LinearLayout>
+            </LinearLayout>
+
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 
@@ -795,7 +793,6 @@
         android:layout_marginBottom="50dp"
         android:background="#f6f6f6"
         android:fillViewport="true"
-        android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints"
         android:visibility="gone">
@@ -807,26 +804,11 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/radius5_orange"
-                    android:paddingBottom="5dp"
-                    android:paddingEnd="20dp"
-                    android:paddingStart="20dp"
-                    android:paddingTop="5dp"
-                    android:text="@string/my_center"
-                    android:textAlignment="center" />
-            </LinearLayout>
-            <include layout="@layout/line" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:background="@color/button_bg"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp">
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
@@ -841,12 +823,11 @@
                     android:text="姓名：张三\n姓名：男"
                     android:textColor="@color/gray3" />
             </LinearLayout>
-            <include layout="@layout/line" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="手机：136 1234 5678"
+                android:text="基本信息"
                 android:textColor="@color/gray3"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"/>
@@ -855,46 +836,65 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="住址：广东省广州市天河区珠江新城高德置地广场1298"
+                android:text="我的预约"
                 android:textColor="@color/gray3"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginStart="20dp"/>
             <include layout="@layout/line" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="签约医生数量：6"
+                android:text="就诊记录"
                 android:textColor="@color/gray3"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginStart="20dp"/>
             <include layout="@layout/line" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="会员级别：VIP6"
+                android:text="我的病历"
                 android:textColor="@color/gray3"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginStart="20dp"/>
             <include layout="@layout/line" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="个人简介：XXXXXXX"
+                android:text="用药提醒"
                 android:textColor="@color/gray3"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginStart="20dp"/>
             <include layout="@layout/line" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="积分：2652"
+                android:text="我关注的医生"
                 android:textColor="@color/gray3"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginStart="20dp"/>
+            <include layout="@layout/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的积分"
+                android:textColor="@color/gray3"
+                android:layout_marginStart="20dp"/>
+            <include layout="@layout/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的钱包"
+                android:textColor="@color/gray3"
+                android:layout_marginStart="20dp"/>
+            <include layout="@layout/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="帮助与反馈"
+                android:textColor="@color/gray3"
+                android:layout_marginStart="20dp"/>
             <include layout="@layout/line" />
 
         </LinearLayout>

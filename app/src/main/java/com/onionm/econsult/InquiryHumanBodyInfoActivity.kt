@@ -59,7 +59,7 @@ class InquiryHumanBodyInfoActivity : AppCompatActivity()
                 val name:Array<String> = arrayOf(
                         "乳房",
                         "心脏",
-                        "肺/呼吸管道",
+                        "肺",
                         "胃"
                 )
                 val code:Array<String> = arrayOf(
