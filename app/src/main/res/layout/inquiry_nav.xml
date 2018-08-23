@@ -639,6 +639,7 @@
                     android:paddingEnd="20dp"
                     android:paddingStart="20dp"
                     android:paddingTop="5dp"
+                    android:textColor="@color/white"
                     android:text="@string/title_discovery"
                     android:textAlignment="center" />
             </LinearLayout>
@@ -668,6 +669,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/hot_information"
+                        android:textColor="@color/white"
                         android:textAlignment="center"/>
                 </LinearLayout>
 
@@ -689,6 +691,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="医生直播"
+                        android:textColor="@color/white"
                         android:textAlignment="center"/>
                 </LinearLayout>
 
@@ -717,6 +720,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="医学科普"
+                        android:textColor="@color/white"
                         android:textAlignment="center"/>
                 </LinearLayout>
 
@@ -738,6 +742,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/doctor_dynamic"
+                        android:textColor="@color/white"
                         android:textAlignment="center"/>
                 </LinearLayout>
             </LinearLayout>
@@ -767,6 +772,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="药品百科指南"
+                        android:textColor="@color/white"
                         android:textAlignment="center"/>
                 </LinearLayout>
 
@@ -820,8 +826,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
-                    android:text="姓名：张三\n姓名：男"
-                    android:textColor="@color/gray3" />
+                    android:textColor="@color/white"
+                    android:text="姓名：张三\n姓名：男" />
             </LinearLayout>
 
             <TextView

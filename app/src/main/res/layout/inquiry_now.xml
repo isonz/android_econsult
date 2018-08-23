@@ -29,6 +29,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:text="您选择了：头部->耳朵"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -122,7 +123,7 @@
                 <Button
                     android:id="@+id/inquiry_now_description_submit"
                     style="@style/zButton"
-                    android:text="@string/inquiry_now_description_submit"/>
+                    android:text="提交"/>
 
             </LinearLayout>
 

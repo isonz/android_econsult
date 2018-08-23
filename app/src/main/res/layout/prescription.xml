@@ -26,6 +26,7 @@
                 android:layout_height="wrap_content"
                 android:text="药品由 XXXX 大药房平台提供并发货"
                 android:textAlignment="center"
+                android:textColor="@color/white"
                 android:layout_marginBottom="20dp"/>
 
             <LinearLayout

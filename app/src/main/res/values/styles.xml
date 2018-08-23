@@ -9,7 +9,7 @@
         <item name="actionBarSize">45dp</item>  <!-- 标题栏高度 -->
 
         <!-- To change the popup menu and app text color  -->
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">@color/gray3</item>
         <!-- To change the background of options menu-->
         <item name="android:itemBackground">@color/menuBackground</item>
         <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>

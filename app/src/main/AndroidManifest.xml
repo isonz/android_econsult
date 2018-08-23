@@ -67,37 +67,50 @@
         <activity
             android:name=".InquirySelectedOnlineDoctorVideoActivity"
             android:parentActivityName=".InquirySelectedOnlineDoctorActivity"
-            android:label="@string/video_mode">
+            android:label="@string/video_mode"
+            android:launchMode="singleTop">
         </activity>
         <activity
             android:name=".InquirySelectedOnlineDoctorVoiceActivity"
             android:parentActivityName=".InquirySelectedOnlineDoctorActivity"
-            android:label="@string/voice_mode">
+            android:label="@string/voice_mode"
+            android:launchMode="singleTop">
         </activity>
         <activity
             android:name=".InquirySelectedOnlineDoctorWordActivity"
             android:parentActivityName=".InquirySelectedOnlineDoctorActivity"
-            android:label="@string/word_mode">
+            android:label="@string/word_mode"
+            android:launchMode="singleTop">
         </activity>
 
 
         <activity
             android:name=".InquiryVisitActivity"
             android:parentActivityName=".MedicalRecordListActivity"
-            android:label="@string/inquiry_visit">
+            android:label="@string/inquiry_visit"
+            android:launchMode="singleTop">
         </activity>
         <activity
             android:name=".InquiryVisit2Activity"
             android:parentActivityName=".MedicalRecordListActivity"
-            android:label="@string/inquiry_visit">
+            android:label="@string/inquiry_visit"
+            android:launchMode="singleTop">
         </activity>
 
 
         <activity
             android:name=".InquiryMyDoctorActivity"
             android:parentActivityName=".InquiryActivity"
-            android:label="@string/inquiry_my_doctor">
+            android:label="@string/inquiry_my_doctor"
+            android:launchMode="singleTop">
         </activity>
+        <activity
+            android:name=".InquiryMyDoctorSigningActivity"
+            android:parentActivityName=".InquiryMyDoctorActivity"
+            android:label="@string/inquiry_my_doctor"
+            android:launchMode="singleTop">
+        </activity>
+
 
         <activity
             android:name=".InquiryHumanBodyActivity"
@@ -122,6 +135,7 @@
         <activity
             android:name=".PrescriptionActivity"
             android:parentActivityName=".MedicalRecordsActivity"
+            android:launchMode="singleTop"
             android:label="@string/prescription">
         </activity>
         <activity
