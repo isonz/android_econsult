@@ -187,7 +187,12 @@
             android:name=".DiscoveryActivity"
             android:label="@string/title_discovery">
         </activity>
-
+        <activity
+            android:name=".DiscoveryDoctorLiveActivity"
+            android:label="医生直播"
+            android:parentActivityName=".InquiryActivity"
+            android:launchMode="singleTop">
+        </activity>
 
 
 

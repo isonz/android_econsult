@@ -52,7 +52,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="根据您的住址、病历为您推荐以下家庭医生，您可以选择任意一位签约成您的家庭医生"
+                                android:text="根据您的住址、病历为您推荐以下家庭医生，您可以选择任意一位签约成为您的家庭医生"
                                 android:textColor="@color/gray6"
                                 android:textSize="12sp"
                                 android:paddingStart="20dp"
@@ -98,6 +98,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="35dp"
                                         android:layout_marginTop="5dp"
+                                        android:textSize="14dp"
                                         android:text="立即签约"
                                         android:layout_weight="1"
                                         android:layout_marginStart="10dp"/>

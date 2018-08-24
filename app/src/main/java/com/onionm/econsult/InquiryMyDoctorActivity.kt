@@ -35,7 +35,7 @@ class InquiryMyDoctorActivity : AppCompatActivity()
         inquiry_signing_doctor_btn_1.setOnClickListener{
             startActivity(Intent(InquiryMyDoctorActivity@this, InquiryMyDoctorSigningActivity::class.java))
         }
-        inquiry_signing_doctor_btn_1.setOnClickListener{
+        inquiry_signing_doctor_btn_3.setOnClickListener{
             startActivity(Intent(InquiryMyDoctorActivity@this, InquiryMyDoctorSigningActivity::class.java))
         }
 

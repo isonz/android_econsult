@@ -72,6 +72,9 @@ open class InquiryActivity : AppCompatActivity()
         }
 
 
+        discovery_doctor_live.setOnClickListener{
+            startActivity(Intent(InquiryActivity@this, DiscoveryDoctorLiveActivity::class.java))
+        }
     }
 
 
