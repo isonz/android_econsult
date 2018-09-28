@@ -11,6 +11,7 @@ import com.safframework.log.L
 import kotlinx.android.synthetic.main.inquiry_nav.*
 import kotlinx.android.synthetic.main.navigation.*
 
+@Suppress("REDUNDANT_LABEL_WARNING")
 open class InquiryActivity : AppCompatActivity()
 {
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
