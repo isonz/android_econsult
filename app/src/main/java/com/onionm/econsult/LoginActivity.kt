@@ -1,5 +1,6 @@
 package com.onionm.econsult
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
@@ -9,9 +10,11 @@ import android.view.WindowManager
 import com.safframework.log.L
 import kotlinx.android.synthetic.main.activity_login.*
 
+@Suppress("REDUNDANT_LABEL_WARNING")
 class LoginActivity : AppCompatActivity()
 {
 
+    @SuppressLint("ObsoleteSdkInt")
     override fun onCreate(savedInstanceState: Bundle?)
     {
         L.i("LoginActivity ON CREATE")

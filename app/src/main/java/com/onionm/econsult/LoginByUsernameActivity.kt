@@ -16,6 +16,10 @@ class LoginByUsernameActivity : AppCompatActivity()
             startActivity(Intent(LoginByUsernameActivity@ this, InquiryActivity::class.java))
         }
 
+        register.setOnClickListener {
+            startActivity(Intent(LoginByUsernameActivity@ this, RegisterActivity::class.java))
+        }
+
     }
 
     // 包裹范围内 属于静态方法
