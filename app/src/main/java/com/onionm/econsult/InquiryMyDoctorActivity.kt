@@ -14,21 +14,21 @@ class InquiryMyDoctorActivity : AppCompatActivity()
         setContentView(R.layout.inquiry_my_doctor)
 
         inquiry_select_online_doctor_btn_1.setOnClickListener{
-            startActivity(Intent(InquiryMyDoctorActivity@this, InquiryVisitActivity::class.java))
+            startActivity(Intent(InquiryMyDoctorActivity@this, InquiryVisitTmp3Activity::class.java))
         }
         inquiry_select_online_doctor_btn_3.setOnClickListener{
-            startActivity(Intent(InquiryMyDoctorActivity@this, InquiryVisit2Activity::class.java))
+            startActivity(Intent(InquiryMyDoctorActivity@this, InquiryVisitTmp4Activity::class.java))
         }
         inquiry_select_online_doctor_btn_4.setOnClickListener{
-            startActivity(Intent(InquiryMyDoctorActivity@this, InquiryVisitActivity::class.java))
+            startActivity(Intent(InquiryMyDoctorActivity@this, InquiryVisitTmp3Activity::class.java))
         }
 
 
         inquiry_recommended_doctor_btn_1.setOnClickListener{
-            startActivity(Intent(InquiryMyDoctorActivity@this, InquiryVisitActivity::class.java))
+            startActivity(Intent(InquiryMyDoctorActivity@this, InquiryVisitTmp1Activity::class.java))
         }
         inquiry_recommended_doctor_btn_3.setOnClickListener{
-            startActivity(Intent(InquiryMyDoctorActivity@this, InquiryVisit2Activity::class.java))
+            startActivity(Intent(InquiryMyDoctorActivity@this, InquiryVisitTmp2Activity::class.java))
         }
 
 
